@@ -4,22 +4,19 @@
   <Script file="ActionbarShift.lua" />
 
   <Frame name="ActionbarShift" frameStrata="LOW" parent="UIParent">
+    <Size x="25" y="170"/>
     <Anchors>
-      <Anchor point="TOPRIGHT" relativeTo="MultiBarRightButton1" relativePoint="TOPRIGHT" x="13" y="13" />
-      <Anchor point="BOTTOMLEFT" relativeTo="MultiBarLeftButton12" relativePoint="BOTTOMLEFT" x="-13" y="-13" />
+      <Anchor point="RIGHT" relativeTo="MultiBarLeftButton6" relativePoint="LEFT" x="0" y="0" />
     </Anchors>
     <Layers>
+      <Layer level="BORDER">
+        <Texture name="$parentBg" setAllPoints="true" parentKey="bg" file="Interface\AddOns\ActionbarShift\texture\UI-Background-Rock" horizTile="true" vertTile="true"/>
+      </Layer>
       <Layer level="ATWORK">
         <Texture name="$parentBorderTopLeft" parentKey="borderTopLeft" file="Interface\AddOns\ActionbarShift\texture\RaidPanel-UpperLeft">
           <Size x="32" y="32" />
           <Anchors>
             <Anchor point="TOPLEFT" x="-5" y="0" />
-          </Anchors>
-        </Texture>
-        <Texture name="$parentBorderTopRight" parentKey="borderTopRight" file="Interface\AddOns\ActionbarShift\texture\RaidPanel-UpperRight">
-          <Size x="32" y="32" />
-          <Anchors>
-            <Anchor point="TOPRIGHT" />
           </Anchors>
         </Texture>
         <Texture name="$parentBorderBottomLeft" parentKey="borderBottomLeft" file="Interface\AddOns\ActionbarShift\texture\RaidPanel-BottomLeft">
@@ -28,39 +25,11 @@
             <Anchor point="BOTTOMLEFT" x="-5" y="0" />
           </Anchors>
         </Texture>
-        <Texture name="$parentBorderBottomRight" parentKey="borderBottomRight" file="Interface\AddOns\ActionbarShift\texture\RaidPanel-BottomRight">
-          <Size x="32" y="32" />
-          <Anchors>
-            <Anchor point="BOTTOMRIGHT" />
-          </Anchors>
-        </Texture>
-        <Texture name="$parentBorderTop" parentKey="borderTop" file="Interface\AddOns\ActionbarShift\texture\RaidPanel-UpperMiddle" horizTile="true">
-          <Size x="0" y="16" />
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentBorderTopLeft" relativePoint="TOPRIGHT" x="0" y="1" />
-            <Anchor point="TOPRIGHT" relativeTo="$parentBorderTopRight" relativePoint="TOPLEFT" x="0" y="1" />
-          </Anchors>
-        </Texture>
-        <Texture name="$parentBorderBottom" parentKey="borderBottom" file="Interface\AddOns\ActionbarShift\texture\RaidPanel-BottomMiddle" horizTile="true">
-          <Size x="0" y="16" />
-          <Anchors>
-            <Anchor point="BOTTOMLEFT" relativeTo="$parentBorderBottomLeft" relativePoint="BOTTOMRIGHT" x="0" y="-4" />
-            <Anchor point="BOTTOMRIGHT" relativeTo="$parentBorderBottomRight" relativePoint="BOTTOMLEFT" x="0" y="-4" />
-          </Anchors>
-        </Texture>
         <Texture name="$parentBorderLeft" parentKey="borderLeft" file="Interface\AddOns\ActionbarShift\texture\RaidPanel-Right" vertTile="true">
           <Size x="16" y="0" />
           <Anchors>
             <Anchor point="TOPLEFT" relativeTo="$parentBorderTopLeft" relativePoint="BOTTOMLEFT" x="0" y="0" />
             <Anchor point="BOTTOMLEFT" relativeTo="$parentBorderBottomLeft" relativePoint="TOPLEFT" x="0" y="0" />
-          </Anchors>
-        </Texture>
-      </Layer>
-      <Layer level="BORDER">
-        <Texture name="$parentBg" parentKey="bg" file="Interface\AddOns\ActionbarShift\texture\UI-Background-Rock" horizTile="true" vertTile="true">
-          <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="$parentBorderTopLeft" x="7" y="-6" />
-            <Anchor point="BOTTOMRIGHT" relativeTo="$parentBorderBottomRight" x="-7" y="7" />
           </Anchors>
         </Texture>
       </Layer>
