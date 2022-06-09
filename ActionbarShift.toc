@@ -1,5 +1,6 @@
 ## Interface: 30300
 ## Title: ActionbarShift
 ## Author: RomanSpector & Blizzard
+##SavedVariablesPerCharacter: ActionbarShiftDB
 
 ActionbarShift.xml

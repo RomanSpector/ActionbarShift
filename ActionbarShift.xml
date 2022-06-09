@@ -97,6 +97,7 @@
     </Frames>
     <Scripts>
       <OnLoad function="ActionbarShift_OnLoad" />
+      <OnEvent function="ActionbarShift_OnEvent" />
     </Scripts>
   </Frame>
 
