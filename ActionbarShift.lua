@@ -83,7 +83,7 @@ end
 ---@param event WowEvent
 ---@param name string
 function ActionbarShift_OnEvent(self, event, name)
-    if name == "ActionbarShift" and ActionbarShiftDB.visible then
+    if name == "ActionbarShift" and ActionbarShiftDB and ActionbarShiftDB.visible then
         ActionbarShift_Expand(self);
     end
 end
