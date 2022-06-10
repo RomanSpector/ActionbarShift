@@ -15,6 +15,8 @@
 ---@class ActionbarShiftToggleButton: Frame
 ---@field texture Texture
 
+ActionbarShiftDB = ActionbarShiftDB or {};
+
 local function updateContainersAnchors()
     local frame, xOffset, yOffset, screenHeight, freeScreenHeight, leftMostPoint, column;
     local screenWidth = GetScreenWidth();
@@ -218,13 +220,12 @@ end
 ---@param event WowEvent
 ---@param name string
 function ActionbarShift_OnEvent(self, event, name)
-    if ( ActionbarShiftDB and not self.loaded ) then
+    if ( name == "ActionbarShift" and not self.loaded ) then
         if ActionbarShiftDB.visible or ActionbarShiftDB.visible == nil then
             ActionbarShift_Expand(self)
         else
             ActionbarShift_Collapse(self);
         end
-
         self.loaded = true;
     end
 end
