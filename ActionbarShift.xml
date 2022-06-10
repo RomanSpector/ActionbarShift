@@ -37,7 +37,7 @@
       <Frame name="$parentToggleButton" frameLevel="3" inherits="SecureHandlerClickTemplate" parentKey="toggleButton">
         <Size x="16" y="64" />
         <Anchors>
-          <Anchor point="LEFT" x="13" y="0" />
+          <Anchor point="LEFT" x="12" y="0" />
         </Anchors>
         <Layers>
           <Layer level="OVERLAY">
@@ -59,7 +59,7 @@
           local tex = self.toggleButton.texture;
           tex:ClearAllPoints();
           tex:SetSize(self.toggleButton:GetSize());
-          tex:SetPoint("CENTER", 1, 0);
+          tex:SetPoint("CENTER", -1, 0);
       </OnMouseDown>
       <OnMouseUp>
           local tex = self.toggleButton.texture;
